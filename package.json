@@ -4,7 +4,8 @@
   "description": "Payment with razorpay backend",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Anirudh",
   "license": "ISC",
@@ -17,5 +18,8 @@
     "paytmchecksum": "^1.5.0",
     "razorpay": "^2.0.6",
     "shortid": "^2.2.16"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
