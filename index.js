@@ -39,6 +39,10 @@ app.post("/payment", async (req, res) => {
   }
 });
 
-app.listen(8080, () => {
+// app.use()
+
+const PORT = process.env.PORT || 1337;
+
+app.listen(PORT, () => {
   console.log("Backend running at localhost:1337");
 });
