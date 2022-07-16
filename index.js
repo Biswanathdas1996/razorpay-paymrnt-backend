@@ -39,6 +39,6 @@ app.post("/payment", async (req, res) => {
   }
 });
 
-app.listen(1337, () => {
+app.listen(8080, () => {
   console.log("Backend running at localhost:1337");
 });
