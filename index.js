@@ -23,22 +23,22 @@ app.post("/payment", async (req, res) => {
   const amount = req?.query?.price;
   const currency = "INR";
   let item = {};
-  const order_items = req.body.map((data) => {
-    item = {
-      ...item,
-      [data?.name]: JSON.stringify({
-        price: data?.price + "INR",
-        qty: 1,
-      }),
-    };
+  // const order_items = req?.body?.map((data) => {
+  //   item = {
+  //     ...item,
+  //     [data?.name]: JSON.stringify({
+  //       price: data?.price + "INR",
+  //       qty: 1,
+  //     }),
+  //   };
 
-    return {
-      [data?.name]: {
-        price: data?.price + "INR",
-        qty: 1,
-      },
-    };
-  });
+  //   return {
+  //     [data?.name]: {
+  //       price: data?.price + "INR",
+  //       qty: 1,
+  //     },
+  //   };
+  // });
 
   const options = {
     amount: amount * 100,
